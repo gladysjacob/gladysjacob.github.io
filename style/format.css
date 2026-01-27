@@ -206,28 +206,29 @@ code {
    ============================================ */
 .btn {
   display: inline-block;
-  padding: 0.875rem 2rem;
-  border-radius: 8px;
-  font-weight: 500;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-weight: 600;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
   border: none;
   text-decoration: none;
   font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0.3px;
 }
 
 .btn-primary {
   background: var(--deep-mauve);
   color: white;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 14px rgba(122, 97, 116, 0.3);
 }
 
 .btn-primary:hover {
   background: var(--dusty-mauve);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(122, 97, 116, 0.4);
+  transform: translateY(-3px);
   color: white;
 }
 
@@ -235,12 +236,14 @@ code {
   background: white;
   color: var(--deep-mauve);
   border: 2px solid var(--soft-mauve);
+  box-shadow: 0 2px 8px rgba(209, 177, 200, 0.15);
 }
 
 .btn-secondary:hover {
-  background: var(--ultra-light-mauve);
+  background: var(--pale-mauve);
   border-color: var(--dusty-mauve);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(209, 177, 200, 0.25);
   color: var(--deep-mauve);
 }
 
@@ -248,7 +251,7 @@ code {
    HERO SECTION (Homepage)
    ============================================ */
 .hero-section {
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,57 +260,75 @@ code {
 }
 
 .hero-content {
-  max-width: 800px;
-  text-align: center;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  min-width: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 5px solid var(--soft-mauve);
+  box-shadow: var(--shadow-lg);
+  flex-shrink: 0;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
 }
 
 .hero-greeting {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--dusty-mauve);
   font-weight: 500;
-  margin-bottom: 0.25rem;
-  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .hero-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
+.hero-tagline-main {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--deep-mauve);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  font-family: 'Lora', serif;
+  letter-spacing: -0.5px;
+}
+
+.hero-tagline-sub {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
   color: var(--text-medium);
   font-weight: 400;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+  margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .hero-description {
   font-size: 1.05rem;
   color: var(--text-light);
-  max-width: 650px;
-  margin: 0 auto 2.5rem;
+  margin-bottom: 2.5rem;
   line-height: 1.8;
+  max-width: 600px;
 }
 
 .hero-cta {
   display: flex;
   gap: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
-}
-
-/* Profile Photo */
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  margin: 0 auto 1.5rem;
-  display: block;
-  border: 3px solid var(--soft-mauve);
-  box-shadow: var(--shadow-md);
 }
 
 /* Skills Tags */
@@ -624,12 +645,29 @@ code {
   }
   
   .hero-section {
-    min-height: 60vh;
+    min-height: 70vh;
     padding: 3rem 1rem;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
   }
   
   .hero-cta {
     flex-direction: column;
+    width: 100%;
   }
   
   .btn {
@@ -648,11 +686,6 @@ code {
   .experience-header {
     flex-direction: column;
     align-items: flex-start;
-  }
-  
-  .profile-photo {
-    width: 150px;
-    height: 150px;
   }
 }
 
