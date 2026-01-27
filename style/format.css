@@ -1,8 +1,13 @@
+/* ============================================
+   GLADYS JACOB PORTFOLIO - CUSTOM STYLING
+   Muted Purple Palette | Light & Elegant
+   ============================================ */
+
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap');
 
 /* ============================================
-   CSS VARIABLES - Color Palette
+   CSS VARIABLES - Your Custom Color Palette
    ============================================ */
 :root {
   /* Your Custom Colors */
@@ -11,16 +16,20 @@
   --gray-purple: #9B9FB5;
   --dusty-mauve: #8C7284;
   --deep-mauve: #7A6174;
+  
+  /* Extended Palette (lighter versions) */
   --ultra-light-mauve: #f5f0f3;
   --pale-mauve: #e8dfe5;
   --light-periwinkle: #e5e7f0;
+  
+  /* Neutrals */
   --off-white: #fdfcfd;
   --pure-white: #ffffff;
   --text-dark: #3d3349;
   --text-medium: #6b5f70;
   --text-light: #8e8593;
   
-  /* Shadows*/
+  /* Shadows (using your mauve tones) */
   --shadow-sm: 0 2px 8px rgba(209, 177, 200, 0.12);
   --shadow-md: 0 4px 16px rgba(209, 177, 200, 0.18);
   --shadow-lg: 0 8px 24px rgba(209, 177, 200, 0.22);
@@ -253,15 +262,15 @@ code {
 }
 
 .hero-greeting {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--dusty-mauve);
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   letter-spacing: 0.5px;
 }
 
 .hero-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .hero-subtitle {
@@ -290,13 +299,14 @@ code {
 
 /* Profile Photo */
 .profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 2rem;
+  object-position: center;
+  margin: 0 auto 1.5rem;
   display: block;
-  border: 4px solid var(--soft-mauve);
+  border: 3px solid var(--soft-mauve);
   box-shadow: var(--shadow-md);
 }
 
@@ -564,7 +574,7 @@ code {
 }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS (Subtle)
    ============================================ */
 @keyframes fadeIn {
   from {
