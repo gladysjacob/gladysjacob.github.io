@@ -1,0 +1,32 @@
+theme: jekyll-theme-primer
+
+# Site settings
+title: Gladys Jacob
+email: mail2gladysj@gmail.com
+description: > 
+  Portfolio of Gladys Jacob - Data Science and Statistics major with Bioinformatics minor.
+  Biology and Big Data Explorer | Decoding life through algorithms and analytics.
+
+baseurl: "" 
+url: "https://gladysjacob.github.io"
+
+# Author info
+author:
+  name: Gladys Jacob
+  email: mail2gladysj@gmail.com
+
+# Navigation - these pages will appear in your header
+header_pages:
+  - about.md
+  - projects.md
+  - contact.md
+
+# Build settings
+markdown: kramdown
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
