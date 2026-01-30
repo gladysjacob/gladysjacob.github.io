@@ -20,8 +20,8 @@ layout: default
       </p>
       
       <div class="hero-cta">
-        <a href="projects.html" class="btn btn-primary">View My Projects</a>
-        <a href="about.html" class="btn btn-secondary">Learn More About Me</a>
+        <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">View My Projects</a>
+        <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">Learn More About Me</a>
       </div>
     </div>
   </div>
