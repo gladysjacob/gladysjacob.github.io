@@ -575,6 +575,33 @@ code {
   font-weight: 500;
 }
 
+/* Skills Section Styling */
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--ultra-light-mauve);
+  border-left: 4px solid var(--soft-mauve);
+  border-radius: 8px;
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  color: var(--deep-mauve);
+  margin-bottom: 0.75rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.skill-category p {
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin: 0;
+}
+
 /* ============================================
    FOOTER
    ============================================ */
